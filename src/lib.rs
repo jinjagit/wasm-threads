@@ -1,10 +1,10 @@
 // adapted from Siddharth Naithani's original file, 2020
 // https://github.com/sn99/wasm-template-rust/blob/master/src/lib.rs
 
-mod utils;
-
 use wasm_bindgen::prelude::*;
 use wasm_timer::Instant;
+
+mod utils;
 
 // NOTE: wasm-timer might panic on Mac OSX. Cannot find alternative.
 // std::time stuff, whether or not via wasm-timer, fail as 'unreachable'

@@ -1,7 +1,7 @@
 {
   "name": "wasm-threads",
   "version": "0.1.0",
-  "description": "A template for no npm wasm-rust and github hosting",
+  "description": "Proof of concept wasm concurrent threads",
   "main": "index.js",
   "bin": {
     "create-wasm-app": ".bin/create-wasm-app.js"
@@ -21,7 +21,7 @@
     "webpack",
     "template"
   ],
-  "author": "sn99 <siddharthn.099@gmail.com>",
+  "author": "Simon Tharby",
   "license": "(MIT OR Apache-2.0)",
   "homepage": "https://github.com/sn99/wasm-template-rust/blob/master/README.md",
   "dependencies": {
@@ -32,6 +32,7 @@
     "webpack": "^4.29.3",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5",
-    "copy-webpack-plugin": "^5.0.0"
+    "copy-webpack-plugin": "^5.0.0",
+    "@wasm-tool/wasm-pack-plugin": "0.4.2"
   }
 }
