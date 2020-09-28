@@ -43,6 +43,6 @@ I needed to do:
 ```
 This is not ideal, as now will have `2 file not found` errors in local and deployed browser console. Must be a better (correct) solution. But this works for now, and means I simply have to delete 2 css file entries from `index.html` on final deploy.  
 
-
+Might be worth trying to build from my own webpack structure in my [Modular UI](https://github.com/jinjagit/Modular_UI), using this [wasm-pack tutorial](https://rustwasm.github.io/docs/wasm-pack/tutorials/npm-browser-packages/index.html), to see if I can get exatly the setup I want.  
   
 Note: this process uses Travis CI to deploy to GitHub Pages.  
