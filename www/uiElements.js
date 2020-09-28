@@ -30,6 +30,7 @@ const uiElements = (() => {
 
     let sliderInput = document.createElement('input');
     sliderInput.classList.add('sliderField');
+    sliderInput.id = `${name}_input`;
     sliderInput.type = "number";
     sliderInput.min = min;
     sliderInput.max = max;
