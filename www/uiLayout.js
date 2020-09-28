@@ -15,7 +15,7 @@ const uiLayout = (() => {
     uiElements.addText(
       "actions",
       parent,
-      ["Last 3 actions:",
+      ["Output:",
         "<br />",
         "<br />",
         "<br />",
@@ -34,34 +34,16 @@ const uiLayout = (() => {
       ["stop_2", "action", 50]
     ]);
 
-    uiElements.addSlider("64_bit_sine_iterations", parent, 50000000, 100000, 100000000, 100000);
-    uiElements.addSlider("parameter_E", parent);
+    uiElements.addSlider("sine_iterations", parent, 50000000, 100000, 100000000, 100000);
     uiElements.addText(
       "example_text_box",
       parent,
-      ["This is a text box.",
+      ["Output:",
         "<br />",
-        "It will grow to fit the text provided."]
-    );
-    uiElements.addText("section_A", parent, ["Section B"], true);
-    uiElements.addButtonRow(parent, [
-      ["toggle_F", "toggle", 33, false],
-      ["toggle_G", "toggle", 34, false],
-      ["toggle_H", "toggle", 33, true]
-    ]);
-    uiElements.addScrollText(
-      "scroll_A",
-      parent,
-      ["This is a scrollable text box.",
         "<br />",
-        "It has a fixed height and is useful when a variable quantity of text may be output to the text box.",
-        "Each paragraph is given an id value and thus can be styled &/or updated individually."],
-      4
+        "<br />",
+        "<br />"]
     );
-    uiElements.addButtonRow(parent, [
-      ["action_C", "action", 50],
-      ["action_D", "action", 50]
-    ]);
 
     // Other UI div(s) - they don't have to be sidebars!
   };

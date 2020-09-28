@@ -378,3 +378,9 @@ input::-moz-focus-inner {padding:0; border:0;}
   margin-top: calc(50% - 13px);
   opacity: 0.6;
 }
+
+/* custom slider input field */
+#sine_iterations_input {
+  width: 100px;
+}
+
