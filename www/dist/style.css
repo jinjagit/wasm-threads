@@ -97,9 +97,6 @@ p {
   width: var(--img-size);
   margin-left: calc((var(--width) - var(--img-size)) / 2);
   margin-top: calc((var(--height) - var(--img-size)) / 2);
-  background-image: url(../img/planet.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .vertical-center {
