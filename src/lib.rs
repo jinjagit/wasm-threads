@@ -88,3 +88,8 @@ pub fn sum_u32() -> Box<[u64]> {
     
     boxed
 }
+
+#[wasm_bindgen]
+pub fn test_me() -> u32 {
+    42
+}
