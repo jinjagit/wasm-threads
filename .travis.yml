@@ -31,6 +31,7 @@ matrix:
       script:
         - mkdir -p docs
         - rm -rf ./docs/*
+        - mkdir -p docs/dist
         - wasm-pack build
         - cd www && npm install
         - npm run build
