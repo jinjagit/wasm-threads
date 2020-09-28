@@ -1,0 +1,32 @@
+[package]
+name = "wasm-test"
+version = "0.1.0"
+authors = ["sn99 <siddharthn.099@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["console_error_panic_hook"]
+
+[dependencies]
+wasm-bindgen = { version = "0.2.58", features = ["serde-serialize"] }
+console_error_panic_hook = { version = "0.1.6", optional = true }
+wee_alloc = { version = "0.4.5", optional = true }
+js-sys = "0.3.35"
+wasm-timer = "0.2.5"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.8"
+
+[dependencies.web-sys]
+version = "0.3.35"
+features = [
+  "console",
+]
+
+# resolves `Fatal: error in validating input` error on was-pack build, from:
+# https://github.com/cloudflare/wrangler/issues/1474
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
