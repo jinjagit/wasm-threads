@@ -35,7 +35,7 @@ matrix:
         - wasm-pack build
         - cd www && npm install
         - npm run build
-        - mv ./dist/* ../docs/dist
+        - mv ./dist/* ../docs
       deploy:
         provider: pages
         skip-cleanup: true
