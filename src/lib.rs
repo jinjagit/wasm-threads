@@ -10,12 +10,6 @@ mod utils;
 // std::time stuff, whether or not via wasm-timer, fail as 'unreachable'
 // Only used for benchmarking, so not otherwise mission-critical.
 
-// When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
-// allocator.
-#[cfg(feature = "wee_alloc")]
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
-
 #[wasm_bindgen]
 pub fn sine_series_f32(n: i32) -> f32 {
     let mut counter = 1;

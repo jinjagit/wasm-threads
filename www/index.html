@@ -1,21 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>Wasm test</title>
-</head>
-<body>
-    <b>10,000,000 iterations: sin(1) + sin(2) + sin(3) ... + sin(10000000)</b>
-    <p id="js-f-text"></p>
-    <p id="wasm-f32-text"></p>
-    <p id="summary-f32-text"></p>
-    <p id="wasm-f64-text"></p>
-    <p id="summary-f64-text"></p>
-    <b>Sum 100,000,000 elements of array: [1..100000000] *Might panic on Mac OSX</b>
-    <p id="js-ary-text"></p>
-    <p id="wasm-ary-text"></p>
-    <p id="summary-ary-text"></p>
-<script src="./bootstrap.js"></script>
-<noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
-</body>
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" /> <!--set favicon to nothing, to prevent console error-->
+    <title>Modular UI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css" media="screen" />
+    <link rel="stylesheet" href="./css/style.css" media="screen" />
+  </head>
+  <body>
+    <div id="canvas">
+      <div id="show-UI" class="button">UI</div>
+      <div id="left-sidebar" class="sidebar">
+        <div id="left-ui-container"></div>
+      </div>
+      <!--Dev related section below this line can be removed-->
+      <div id="image">
+        <div id="dev-text-div">
+          <p style="text-align:center;">placeholder image</p>
+        </div>
+      </div>
+      <!--Dev related section above this line can be removed-->
+      <div id="right-sidebar" class="sidebar">
+        <div id="right-ui-container"></div>
+      </div>
+    </div>
+    <script src="./bootstrap.js"></script>
+  </body>
 </html>
