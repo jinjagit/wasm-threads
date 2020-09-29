@@ -19,11 +19,19 @@ extern "C" {
     fn log(s: &str);
 }
 
-#[wasm_bindgen(module = "/test.js")]
+// Functions called from JS ------
+
+#[wasm_bindgen(module = "/js-for-rust.js")]
 extern "C" {
-    fn logme() -> String;
+    fn logme(number: u32);
 }
 
+// #[wasm_bindgen(module = "/js-for-rust.js")]
+// extern "C" {
+//     fn printme() -> String;
+// }
+
+// --------------------------------
 
 #[wasm_bindgen]
 pub fn sine_series_f32(n: i32) -> f32 {
@@ -107,7 +115,7 @@ pub fn sum_u32() -> Box<[u64]> {
 #[wasm_bindgen]
 pub fn test_me() -> u32 {
     log(&format!("Hello from Rust!!"));
-    logme();
+    logme(42);
     42
 }
 
