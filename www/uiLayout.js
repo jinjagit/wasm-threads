@@ -34,7 +34,7 @@ const uiLayout = (() => {
       ["stop_2", "action", 50]
     ]);
 
-    uiElements.addSlider("sine_iterations", parent, 50000000, 100000, 100000000, 100000);
+    uiElements.addSlider("f64_sine_iterations", parent, 50000000, 100000, 100000000, 100000);
     uiElements.addText(
       "example_text_box",
       parent,

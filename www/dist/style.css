@@ -380,7 +380,7 @@ input::-moz-focus-inner {padding:0; border:0;}
 }
 
 /* custom slider input field */
-#sine_iterations_input {
+#f64_sine_iterations_input {
   width: 100px;
 }
 

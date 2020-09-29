@@ -47,6 +47,7 @@ Might be worth trying to build from my own webpack structure in my [Modular UI](
   
 Note: this process uses Travis CI to deploy to GitHub Pages.  
 
-Next steps:  
+## Next steps:  
 
-Use [this tutorial](https://rustwasm.github.io/docs/wasm-bindgen/examples/import-js.html) to be able to update innerHTML of an element from Rust generated wasm (hopefully). But start with the console log example.
+* Use [this tutorial](https://rustwasm.github.io/docs/wasm-bindgen/examples/import-js.html) to be able to update innerHTML of an element from Rust generated wasm (hopefully). But start with the console log example. DONE  
+* Develop running timer (?ms - maybe too much to ask?)  
