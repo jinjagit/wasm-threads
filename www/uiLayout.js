@@ -7,7 +7,7 @@ const uiLayout = (() => {
     // Left sidebar
     let parent = document.getElementById("left-ui-container");
 
-    uiElements.addTitle("Thread_1", "ms elapsed display", parent, true);
+    uiElements.addTitle("Thread_1", "ms elapsed display", parent, false);
     uiElements.addButtonRow(parent, [
       ["start_1", "action", 50],
       ["stop_1", "action", 50]
