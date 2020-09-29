@@ -23,6 +23,10 @@ wasm-bindgen-test = "0.3.8"
 version = "0.3.35"
 features = [
   "console",
+  "Document",
+  "DomTokenList",
+  "Element",
+
 ]
 
 # resolves `Fatal: error in validating input` error on was-pack build, from:

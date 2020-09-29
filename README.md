@@ -46,3 +46,7 @@ This is not ideal, as now will have `2 file not found` errors in local and deplo
 Might be worth trying to build from my own webpack structure in my [Modular UI](https://github.com/jinjagit/Modular_UI), using this [wasm-pack tutorial](https://rustwasm.github.io/docs/wasm-pack/tutorials/npm-browser-packages/index.html), to see if I can get exatly the setup I want.  
   
 Note: this process uses Travis CI to deploy to GitHub Pages.  
+
+Next steps:  
+
+Use [this tutorial](https://rustwasm.github.io/docs/wasm-bindgen/examples/import-js.html) to be able to update innerHTML of an element from Rust generated wasm (hopefully). But start with the console log example.
