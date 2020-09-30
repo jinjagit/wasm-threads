@@ -1,5 +1,6 @@
 // See wiki for more details: https://github.com/jinjagit/myUI/wiki
 
+import * as wasm from "wasm-threads";
 import { params } from './params'
 
 const uiActions = (() => {
@@ -21,13 +22,13 @@ const uiActions = (() => {
 
     if (id == "get_parameter_values") {
         printParams();
-    } else if (id == "Modular_UI") {
-        leftSidebar.style.display = "none";
-        rightSidebar.style.display = "none";
     } else if (id == "readme") {
         window.location.href = "https://github.com/jinjagit/Modular_UI/blob/master/README.md"
     } else if (id == "wiki") {
         window.location.href = "https://github.com/jinjagit/Modular_UI/wiki"
+    } else if (id = "start_1") {
+      let result3 = wasm.sine_series_f64(10000000);
+      console.log(result3);
     }
   };
 

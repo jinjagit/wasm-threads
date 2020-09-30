@@ -24,6 +24,15 @@ const uiLayout = (() => {
     uiElements.addButtonRow(parent, [
       ["reset_1", "action", 100]
     ]);
+    uiElements.addButtonRow(parent, [
+      ["get_parameter_values", "action", 100]
+    ]);
+    uiElements.addScrollText(
+      "params",
+      parent,
+      ["<br />"],
+      6
+    );
 
     // Right sidebar
     parent = document.getElementById("right-ui-container");
