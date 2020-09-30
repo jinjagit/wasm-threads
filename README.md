@@ -52,6 +52,8 @@ Note: this process uses Travis CI to deploy to GitHub Pages.
 * Use [this tutorial](https://rustwasm.github.io/docs/wasm-bindgen/examples/import-js.html) to be able to update innerHTML of an element from Rust generated wasm (hopefully). But start with the console log example. DONE  
 * Develop running timer (?ms - maybe too much to ask?)  
 
-Not entirely sure what i am trying to do with this repo. Maybe I am trying to run main thread + 1 thread in wasm = can't start/stop main thread, but can show can start 2nd thread (have not worked out how to interupt a thread in Rust yet, but theoretically possible, though maybe not in wasm).  
+Not entirely sure what I am trying to do with this repo. Maybe I am trying to run main thread + 1 thread in wasm = can't start/stop main thread, but can show can start 2nd thread (have not worked out how to interupt a thread in Rust yet, but theoretically possible, though maybe not in wasm).  
   
 Actually, I'm not even sure what 'running a main thread' in wasm means, since so far I have just called functions. So maybe this is where I should start exploring.
+
+Test 1: Call Rust f64 sine funtion from JS and see if UI is responsive while it runs (prediction = no)
