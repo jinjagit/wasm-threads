@@ -58,6 +58,6 @@ Actually, I'm not even sure what 'running a main thread' in wasm means, since so
 
 Test 1: Call Rust f64 sine funtion from JS and see if UI is responsive while it runs (prediction = no). RESULT = correct. UI unresponsive while running Rust (wasm) function = JS linked to main.js, in general, will be unresponsive (unless using threads, or some concurrency equivalent, in js?).
 
-Test 2: Try using a js callback function to call Rust f64 sine funtion from JS and see if UI is responsive while it runs (prediction = yes).
+Test 2: Try using a js callback function to call Rust f64 sine funtion from JS and see if UI is responsive while it runs (prediction = yes). RESULT = incorrect. That's not what callbacks do. in fact, i think what I want is not doable with JS.
 
-Test 3. Make Rust f64 sine funtion a thread inside the function, and call it from JS and see if it runs at all. (prediction = no, because no main thread running in Rust/wasm)
+= shelve this idea for now
