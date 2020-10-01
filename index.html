@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" /> <!--set favicon to nothing, to prevent console error-->
+    <title>wasm-threads</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" media="screen" />
+    <link rel="stylesheet" href="style.css" media="screen" />
+    <link rel="stylesheet" href="./dist/reset.css" media="screen" />
+    <link rel="stylesheet" href="./dist/style.css" media="screen" />
+  </head>
+  <body>
+    <div id="canvas">
+      <div id="show-UI" class="button">UI</div>
+      <div id="left-sidebar" class="sidebar">
+        <div id="left-ui-container"></div>
+      </div>
+      <!--Dev related section below this line can be removed-->
+      <div id="image">
+        <div id="dev-text-div">
+          <p style="text-align:center;">placeholder</p>
+        </div>
+      </div>
+      <!--Dev related section above this line can be removed-->
+      <div id="right-sidebar" class="sidebar">
+        <div id="right-ui-container"></div>
+      </div>
+    </div>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
