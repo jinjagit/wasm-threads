@@ -60,4 +60,4 @@ Test 1: Call Rust f64 sine funtion from JS and see if UI is responsive while it 
 
 Test 2: Try using a js callback function to call Rust f64 sine funtion from JS and see if UI is responsive while it runs (prediction = yes). RESULT = incorrect. That's not what callbacks do. in fact, i think what I want is not doable with JS.
 
-= shelve this idea for now
+= shelve this idea for now (and study more about threads in Rust)
